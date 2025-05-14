@@ -1,0 +1,95 @@
+ body{
+    background-color: rgb(255, 255, 255);
+ }
+ .container{
+  width: 80%;
+ }
+  form{
+   display: grid;
+   grid-template-columns: [labels] auto [controls] 1fr;
+   grid-auto-flow: row;
+   grid-gap: .8em .5em;
+   background: beige;
+   padding: 1.2em;
+   width: 36em;
+   font-weight: 700;
+  }
+  .name>input{
+   cursor: pointer;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px black;
+  }
+  .name>input:hover{
+   box-shadow: 5px 2px 5px  black;
+  }
+  .gender>select{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px  black;
+    height: 50px;
+  }
+  .gender>select:hover{
+    box-shadow: 5px 2px  5px  black;
+  }
+  .gender>select>option{
+    color:#49aeef ;
+    font-weight: bold;
+  }
+ 
+  .religion>select{
+   cursor: pointer;
+   border: none;
+    border-radius: 5px;
+    box-shadow: 5px 2px 2px  black;
+    height: 50px;
+  }
+  .religion>select:hover{
+   box-shadow: 5px 2px  5px  black;
+  }
+  .acdemic>select{
+   cursor: pointer;
+   padding: 5px;
+   border: none;
+   width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px  black;
+    height: 50px;
+  }
+  .acdemic>select:hover{
+   box-shadow: 5px 2px 5px   black;
+  }
+ .income>select{
+   cursor: pointer;
+   border: none;
+   width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px   black;
+    height: 50px;
+ }
+ .income>select:hover{
+   box-shadow: 4px 2px   8px     black ;
+ }
+ 
+ .other-details>input{
+  cursor: pointer;
+  border: none;
+   border-radius: 5px;
+   box-shadow: 2px 2px   black;
+   height: 50px;
+}
+ .other-details>input:hover{
+ box-shadow: 2px 2px 5px black;
+ }
+ 
+ .other-details>input[type=number]::-webkit-inner-spin-button{
+   
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.bi-caret-left:hover{
+color: red;
+}
+ 
+ 

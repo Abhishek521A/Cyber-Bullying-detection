@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyberbullying</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function report(){
+            window.open("police1.html")
+             
+        }
+    </script>
+</head>
+<body>
+    <h1>Cyberbullying</h1>
+    <div class="header">
+        <div>
+            <br><span>
+                <input id="TextInput1" type="text" name="sentence" placeholder="Enter the sentences " required></span>
+            <br>
+            <button class="btn" onclick="cyberbullyingWithMLModel()" >Submit</button>
+            
+            <input type = "submit" onclick="rep()" value ="Report" class="rep">
+        </div>
+    </div>
+    <p autocomplete="off" id="TextInput2" name="message"></p>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="abhishek.js"></script>
+    
+    <style>
+        * {
+    text-align: center;
+    }
+body{
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M720 691.77C823.97 679.64 904.55 612.35 982.79 542.79 1068.33 466.69 1176.21 394.27 1182.94 280 1189.88 162.5 1106.82 58.83 1015.7-15.7 933.32-83.09 826.22-92.13 720-98.76 603.14-106.07 471.09-134.36 384.86-55.14 297.11 25.51 307.31 160.83 307.82 280 308.33 398.42 303.94 528.57 387.72 612.28 471.46 695.96 602.43 705.51 720 691.77' fill='%231c538e'%3e%3c/path%3e%3cpath d='M720 546.44C787.28 538.59 839.42 495.05 890.04 450.04 945.39 400.8 1015.2 353.94 1019.55 280 1024.04 203.97 970.29 136.89 911.33 88.67 858.03 45.06 788.73 39.21 720 34.92 644.39 30.19 558.94 11.89 503.15 63.15 446.36 115.33 452.96 202.89 453.29 280 453.62 356.63 450.79 440.84 504.99 495.01 559.18 549.15 643.92 555.33 720 546.44' fill='%232774c6'%3e%3c/path%3e%3cpath d='M720 401.11C750.58 397.54 774.28 377.75 797.29 357.29 822.45 334.91 854.18 313.61 856.16 280 858.2 245.44 833.77 214.95 806.97 193.03 782.74 173.21 751.24 170.55 720 168.6 685.63 166.45 646.79 158.13 621.43 181.43 595.62 205.15 598.62 244.95 598.77 280 598.92 314.83 597.63 353.11 622.27 377.73 646.9 402.34 685.42 405.15 720 401.11' fill='%23488fdb'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    /* background: linear-gradient(#4671EA, #AC34E7); */
+    padding: 100px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#TextInput2{
+    margin-top: 50px;
+    text-align: center;
+}
+ 
+.btn{
+    margin: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #2E475D;
+    background-color: white;
+}
+        input[type="text"]{
+            border-radius: 20px;
+            height: 30px;
+            width:  300px;
+            border: none;
+         
+            box-shadow: 5px 5px black;
+        }
+        .rep{
+           background-color:white;
+           
+           padding: 7px;
+        
+        }
+        .rep:hover{
+            background-color: transparent;
+            color: rgb(47, 47, 47);
+        }
+        input::placeholder{
+            font-weight: bold;
+        }
+        .btn{
+            border-radius: 20px;
+            margin-left: 2%;
+            width: 150px;
+              
+            border: none;
+            font-weight: 500;
+            font-size: 20px;
+            box-shadow: 5px 5px black;
+        }
+        input[type=submit]{
+            border-radius: 20px;
+            margin-left: 2%;
+            width: 150px;
+             margin-top: 2%;
+            border: none;
+            font-weight: 500;
+            font-size: 20px;
+            box-shadow: 5px 5px black;
+        }
+        #TextInput2{
+            font-size: 40px;
+        }
+    </style>
+    <script>
+        function rep(){
+            location.href ="report.html";
+        }
+        function cyberbullyingWithMLModel() {
+  // call the function
+  let sentence = document.getElementById("TextInput1").value;
+  const messagePayloadToAPI = {
+    message: sentence
+  }
+
+  var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+var theUrl = "http://localhost:5000/predict";
+xmlhttp.open("POST", theUrl);
+xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp.send(JSON.stringify(messagePayloadToAPI));
+
+xmlhttp.onreadystatechange = () => {
+  // Call a function when the state changes.
+  let resp;
+  if (xmlhttp.readyState === XMLHttpRequest.DONE && xmlhttp.status === 200) {
+    // Request finished. Do processing here.
+    resp = JSON.parse(xmlhttp.response)
+    const verdict = resp.verdict;
+    if(verdict === 'You are being bullied...'){
+    let output = (document.getElementById("TextInput2").innerHTML = "<br>" + "You are being bullied. Please seek immediate help using the report button below!!");
+    return output;
+  }
+  else{
+    document.getElementById("TextInput2").innerHTML = ("<br>" + "All good, have a nice day!!");
+  }
+  }
+};
+}
+
+// // form vali
+
+//  function validateForm(){
+//   const username = document.querySelector('#user_name').value;
+//  const fathername=document.querySelector('#father_name').value;
+//  const mothername =document.querySelector('#mother_name').value
+//  const dob = document.querySelector("#date").value;
+//  const gender =document.forms.gender;
+
+//    if ( username,fathername,mothername,dob==""){
+//     alert("Enter All Field");
+   
+//    }
+//   //  if( fathername==''){
+//   //   alert("Enter All fathername");
+//   //  }
+ 
+ 
+//   else{
+//     personalNextBtn.addEventListener('click', () => {
+//       // e.preventDefault();
+//       personalInfo.style = "display : none";
+//       academicInfo.style = "display : block";
+//       document.getElementById('active1').checked= true;
+//       document.getElementById('active2').checked= true;
+//       document.getElementById('active3').checked= false;
+
+//   })
+
+//   academicPreviousBtn.addEventListener('click', () => {
+//       academicInfo.style = "display : none";
+//       personalInfo.style = "display : block";
+//       document.getElementById('active1').checked= true;
+//       document.getElementById('active2').checked=false;
+//       document.getElementById('active3').checked= false;
+     
+//   })
+
+//   academicNextBtn.addEventListener('click', () => {
+//       academicInfo.style = "display : none";
+//       documentInfo.style = "display : block";
+//       document.getElementById('active2').checked= false;
+//       document.getElementById('active3').checked= true;
+     
+//   })
+
+//   documentPreviousBtn.addEventListener('click', () => {
+//       // e.preventDefault();
+//       documentInfo.style = "display : none";
+//       academicInfo.style = "display : block";
+//       document.getElementById('active2').checked= true;
+//       document.getElementById('active3').checked= false;
+//   })
+//   }
+// };
+
+
+// function data(){
+//   const username = document.querySelector('#user_name').value;
+//   const fathername=document.querySelector('#father_name').value;
+//   const mothername =document.querySelector('#mother_name').value
+//   const dob = document.querySelector("#date").value;
+//   const gender =document.forms.gender;
+//   const country = document.querySelector('#country').value;
+//   const  state = document.querySelector('#state').value;
+//   const city = document.querySelector('#city').value ;
+//   const edu = document.querySelector('#edu').value;
+//   const occupation = document.querySelector("#occup").value;
+//   const income = document.querySelector("#income").value;
+//   const relation = document.querySelector("#relation").value;
+//   const mobile_number = document.querySelector("phonenum").value;
+//   const  addharnum = document.querySelector("addharnum").value;
+//   console.log(username,fathername,mothername,dob,gender,country,state,city,edu,occupation,income,relation,mobile_number,addharnum);
+// }
+
+
+
+
+
+    </script>
+</body>
+</html>

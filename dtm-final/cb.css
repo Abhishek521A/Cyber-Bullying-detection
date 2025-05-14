@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.container1 {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  /* background: url("image.jpg") ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.frame2{
+  width: 100%;
+  height: auto;
+
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-header {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3em;
+ 
+  cursor: pointer;
+}
+
+ 
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  
+  text-transform: uppercase;
+}
+
+.product-section {
+  width: 85%;
+  margin: auto;
+  width: max-content;
+ border:  2px solid black;
+ 
+}
+.log{
+  cursor: pointer;
+}
+.model-header {
+  font-family: "Italianno", cursive;
+  font-size: 2em;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.btn-catalog {
+  width: 200px;
+  padding: 10px 0;
+  margin: 20px 0;
+  margin-right: 10px;
+  border-radius: 25px;
+  border: 1px solid #009688;
+  font-weight: bold;
+  background: transparent;
+ 
+  cursor: pointer;
+}
+
+footer {
+  width: 85%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: smaller;
+}
+
+.link {
+  text-decoration: none;
+}
